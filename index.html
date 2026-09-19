@@ -1,0 +1,3753 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guruh Wicaksono | GIS Specialist &amp; Software Developer</title>
+    <meta
+      name="description"
+      content="GIS and Remote Sensing specialist and software developer in Indonesia. Experienced in international spatial data projects and modern web applications."
+    />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Guruh Wicaksono | GIS Specialist &amp; Software Developer" />
+    <meta
+      property="og:description"
+      content="GIS and Remote Sensing specialist and software developer in Indonesia. Experienced in international spatial data projects and modern web applications."
+    />
+    <meta property="og:image" content="https://placehold.co/1200x630/1A1512/FAF6F0.png?text=Guruh+Wicaksono" />
+    <!-- DEPLOY STEP: Update canonical URL once deployed -->
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Guruh Wicaksono | GIS Specialist &amp; Software Developer" />
+    <meta
+      name="twitter:description"
+      content="GIS and Remote Sensing specialist and software developer in Indonesia. Experienced in international spatial data projects and modern web applications."
+    />
+    <meta name="twitter:image" content="https://placehold.co/1200x630/1A1512/FAF6F0.png?text=Guruh+Wicaksono" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Guruh Wicaksono",
+        "jobTitle": "GIS Specialist and Software Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Mizumoto Photography"
+        },
+        "url": "https://example.com",
+        "sameAs": [
+          "https://github.com/guruhw23",
+          "https://www.linkedin.com/in/guruhwicaksono"
+        ]
+      }
+    </script>
+
+    <style>
+      /* CSS Custom Properties / Design Tokens */
+      :root {
+        --ink: #1A1512;
+        --ink-soft: #2A211B;
+        --cream: #FAF6F0;
+        --cream-soft: #F1E9DF;
+        --terracotta: #C4622D;
+        --ember: #E08A5B;
+        --muted-dark: #A89684;
+        --muted-light: #6B5D52;
+
+        --font-display: 'Fraunces', serif;
+        --font-body: 'Inter', sans-serif;
+        --font-script: 'Caveat', cursive;
+
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+        --s1: 8px;
+        --s2: 16px;
+        --s3: 24px;
+        --s4: 32px;
+        --s5: 48px;
+        --s6: 64px;
+        --s7: 96px;
+        --s8: 128px;
+
+        --radius-sm: 8px;
+        --radius-md: 16px;
+        --radius-lg: 28px;
+        --maxw: 1200px;
+      }
+
+      /* Lightweight CSS Reset */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+        overflow-x: hidden;
+      }
+
+      body {
+        min-height: 100vh;
+        background-color: var(--cream);
+        color: var(--ink);
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.6;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      /* Accessible Focus States */
+      :focus-visible {
+        outline: 2px solid var(--terracotta);
+        outline-offset: 3px;
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--terracotta);
+        outline-offset: 3px;
+        border-radius: var(--radius-sm);
+      }
+
+      .btn-primary:focus-visible,
+      .btn-cream:focus-visible {
+        outline: 2px solid var(--cream);
+        outline-offset: 3px;
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* Utility Classes */
+      .container {
+        width: 100%;
+        max-width: var(--maxw);
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: var(--s3);
+        padding-right: var(--s3);
+      }
+
+      @media (min-width: 640px) {
+        .container {
+          padding-left: var(--s4);
+          padding-right: var(--s4);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .container {
+          padding-left: var(--s5);
+          padding-right: var(--s5);
+        }
+      }
+
+      .section {
+        padding-top: var(--s6);
+        padding-bottom: var(--s6);
+      }
+
+      @media (min-width: 640px) {
+        .section {
+          padding-top: var(--s7);
+          padding-bottom: var(--s7);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .section {
+          padding-top: var(--s8);
+          padding-bottom: var(--s8);
+        }
+      }
+
+      .section--dark {
+        background-color: var(--ink);
+        color: var(--cream);
+      }
+
+      .section--light {
+        background-color: var(--cream);
+        color: var(--ink);
+      }
+
+      .eyebrow {
+        font-family: var(--font-body);
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--terracotta);
+        display: inline-block;
+      }
+
+      .heading-xl {
+        font-family: var(--font-display);
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        font-size: clamp(2.5rem, 5vw + 1rem, 4.25rem);
+      }
+
+      .heading-lg {
+        font-family: var(--font-display);
+        font-weight: 600;
+        line-height: 1.15;
+        letter-spacing: -0.015em;
+        font-size: clamp(2rem, 3.5vw + 0.75rem, 3rem);
+      }
+
+      .heading-md {
+        font-family: var(--font-display);
+        font-weight: 600;
+        line-height: 1.25;
+        letter-spacing: -0.01em;
+        font-size: clamp(1.375rem, 2vw + 0.5rem, 2rem);
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: var(--terracotta);
+        color: var(--cream);
+        border-radius: 9999px;
+        padding: 12px 24px;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: transform 0.3s var(--ease), background-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        background-color: var(--ember);
+      }
+
+      .btn-ghost {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        color: inherit;
+        border: 1px solid currentColor;
+        border-radius: 9999px;
+        padding: 12px 24px;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: transform 0.3s var(--ease), background-color 0.3s var(--ease), border-color 0.3s var(--ease);
+      }
+
+      .btn-ghost:hover {
+        transform: translateY(-2px);
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .btn-outline-light {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        color: var(--cream);
+        border: 1px solid var(--cream);
+        border-radius: 9999px;
+        padding: 12px 24px;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: transform 0.3s var(--ease), background-color 0.3s var(--ease), color 0.3s var(--ease);
+      }
+
+      .btn-outline-light:hover {
+        transform: translateY(-2px);
+        background-color: var(--cream);
+        color: var(--ink);
+      }
+
+      /* Scroll-Reveal Animation System */
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+        will-change: opacity, transform;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* NAVBAR */
+      .navbar {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 72px;
+        background-color: var(--ink);
+        z-index: 100;
+        transition: background-color 0.35s var(--ease), backdrop-filter 0.35s var(--ease), -webkit-backdrop-filter 0.35s var(--ease), box-shadow 0.35s var(--ease);
+      }
+
+      .navbar.is-scrolled {
+        background-color: rgba(26, 21, 18, 0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .navbar-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      /* Monogram & Identity */
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+      }
+
+      .nav-monogram {
+        width: 38px;
+        height: 38px;
+        border: 1.5px solid var(--terracotta);
+        border-radius: var(--radius-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 15px;
+        color: var(--cream);
+        flex-shrink: 0;
+      }
+
+      .nav-brand-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .nav-brand-name {
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--cream);
+        line-height: 1.2;
+      }
+
+      .nav-brand-role {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        color: var(--muted-dark);
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 1.3;
+        margin-top: 2px;
+      }
+
+      /* Desktop Center Links */
+      .nav-menu-desktop {
+        display: none;
+        list-style: none;
+        gap: 28px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (min-width: 1024px) {
+        .nav-menu-desktop {
+          display: flex;
+        }
+      }
+
+      .nav-link {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--cream);
+        position: relative;
+        padding: 6px 0;
+        transition: color 0.3s var(--ease);
+      }
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--terracotta);
+        border-radius: 1px;
+        transition: width 0.3s var(--ease);
+      }
+
+      .nav-link:hover {
+        color: var(--cream);
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      /* Nav Right Actions */
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .nav-cv-btn {
+        display: none;
+      }
+
+      @media (min-width: 1024px) {
+        .nav-cv-btn {
+          display: inline-flex;
+        }
+      }
+
+      /* Hamburger Toggle */
+      .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--cream);
+        padding: 8px;
+      }
+
+      @media (min-width: 1024px) {
+        .nav-toggle {
+          display: none;
+        }
+      }
+
+      .nav-toggle-bar {
+        width: 22px;
+        height: 2px;
+        background-color: var(--cream);
+        border-radius: 1px;
+        transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
+      }
+
+      /* Mobile Drawer */
+      .mobile-backdrop {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 198;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s var(--ease);
+      }
+
+      .mobile-backdrop.is-active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .mobile-drawer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 320px;
+        max-width: 85vw;
+        height: 100vh;
+        height: 100dvh;
+        background-color: var(--ink-soft);
+        z-index: 199;
+        transform: translateX(100%);
+        transition: transform 0.4s var(--ease);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: var(--s4) var(--s4) var(--s5);
+        box-shadow: -8px 0 24px rgba(0, 0, 0, 0.4);
+      }
+
+      .mobile-drawer.is-open {
+        transform: translateX(0);
+      }
+
+      .mobile-drawer-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: var(--s3);
+        border-bottom: 1px solid rgba(168, 150, 132, 0.15);
+      }
+
+      .mobile-close-btn {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: none;
+        color: var(--cream);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color 0.2s var(--ease);
+      }
+
+      .mobile-close-btn:hover {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+
+      .mobile-nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-top: var(--s4);
+      }
+
+      .mobile-nav-link {
+        display: block;
+        padding: 12px 14px;
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--cream);
+        border-radius: var(--radius-sm);
+        transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
+      }
+
+      .mobile-nav-link:hover {
+        background-color: rgba(196, 98, 45, 0.15);
+        color: var(--terracotta);
+      }
+
+      .mobile-drawer-footer {
+        padding-top: var(--s4);
+      }
+
+      /* HERO SECTION */
+      .hero {
+        background-color: var(--ink);
+        color: var(--cream);
+        min-height: 92vh;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding-top: var(--s5);
+        padding-bottom: var(--s6);
+      }
+
+      @media (min-width: 1024px) {
+        .hero {
+          padding-top: var(--s6);
+          padding-bottom: var(--s7);
+        }
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--s5);
+        align-items: center;
+        width: 100%;
+      }
+
+      @media (min-width: 1024px) {
+        .hero-grid {
+          grid-template-columns: 55fr 45fr;
+          gap: var(--s6);
+        }
+      }
+
+      /* Hero Left Column */
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-title-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: var(--s2);
+        margin-bottom: var(--s3);
+      }
+
+      .hero-title-main {
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: clamp(2.75rem, 5vw + 1.25rem, 5.5rem);
+        color: var(--cream);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+      }
+
+      .hero-title-sub {
+        font-family: var(--font-display);
+        font-style: italic;
+        font-weight: 600;
+        font-size: clamp(1.25rem, 2vw + 0.5rem, 1.85rem);
+        color: var(--terracotta);
+        line-height: 1.3;
+      }
+
+      .hero-description {
+        max-width: 480px;
+        color: var(--muted-dark);
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: var(--s4);
+      }
+
+      .hero-cta-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--s2);
+        margin-bottom: var(--s4);
+        align-items: center;
+      }
+
+      .hero-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        color: var(--cream-soft);
+        text-transform: uppercase;
+        margin-bottom: var(--s4);
+      }
+
+      .pulse-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #22c55e;
+        position: relative;
+        flex-shrink: 0;
+      }
+
+      .pulse-dot::after {
+        content: '';
+        position: absolute;
+        inset: -4px;
+        border-radius: 50%;
+        background-color: rgba(34, 197, 94, 0.4);
+        animation: pulse-ring 2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+      }
+
+      @keyframes pulse-ring {
+        0% {
+          transform: scale(0.6);
+          opacity: 0.8;
+        }
+        100% {
+          transform: scale(2.3);
+          opacity: 0;
+        }
+      }
+
+      .hero-socials {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 1px solid rgba(168, 150, 132, 0.35);
+        color: var(--cream);
+        transition: background-color 0.3s var(--ease), border-color 0.3s var(--ease), transform 0.3s var(--ease);
+      }
+
+      .social-link:hover {
+        background-color: var(--terracotta);
+        border-color: var(--terracotta);
+        transform: translateY(-2px);
+      }
+
+      /* Hero Right Column */
+      .hero-visual {
+        position: relative;
+        width: 100%;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Decorative Dot Grid */
+      .hero-dot-grid {
+        position: absolute;
+        top: -24px;
+        right: -16px;
+        width: 120px;
+        height: 120px;
+        opacity: 0.22;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      /* Organic Terracotta Morphing Blob */
+      .hero-blob {
+        position: absolute;
+        inset: 16px 20px;
+        background: linear-gradient(135deg, var(--terracotta), #9E4B1F);
+        border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+        animation: morph-blob 20s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+        z-index: 2;
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
+      }
+
+      @keyframes morph-blob {
+        0% {
+          border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+        }
+        33% {
+          border-radius: 48% 52% 42% 58% / 56% 44% 52% 48%;
+        }
+        66% {
+          border-radius: 52% 48% 58% 42% / 44% 56% 46% 54%;
+        }
+        100% {
+          border-radius: 56% 44% 46% 54% / 52% 42% 58% 48%;
+        }
+      }
+
+      .hero-photo-wrapper {
+        position: relative;
+        z-index: 3;
+        width: 86%;
+        max-width: 390px;
+        border-radius: 52% 48% 50% 50% / 48% 50% 50% 52%;
+        overflow: hidden;
+        box-shadow: 0 24px 44px rgba(0, 0, 0, 0.4);
+      }
+
+      .hero-photo {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        display: block;
+      }
+
+      /* Floating Experience Card */
+      .hero-experience-card {
+        position: absolute;
+        bottom: 8px;
+        right: -8px;
+        background-color: var(--cream);
+        color: var(--ink);
+        border-radius: var(--radius-md);
+        padding: 16px 20px;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        max-width: 270px;
+      }
+
+      @media (min-width: 640px) {
+        .hero-experience-card {
+          bottom: 16px;
+          right: -16px;
+        }
+      }
+
+      .card-star-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: var(--terracotta);
+        color: var(--cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+
+      .card-number {
+        font-family: var(--font-display);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+        color: var(--ink);
+      }
+
+      .card-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1.3;
+        margin-top: 3px;
+      }
+
+      .card-subtitle {
+        font-size: 11px;
+        color: var(--muted-light);
+        line-height: 1.3;
+        margin-top: 2px;
+      }
+
+      /* ABOUT SECTION */
+      .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .about-header {
+        max-width: 700px;
+        margin-bottom: var(--s4);
+      }
+
+      .about-header .heading-lg {
+        margin-top: var(--s2);
+        color: var(--ink);
+      }
+
+      .about-text-group {
+        max-width: 640px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--s3);
+      }
+
+      .about-paragraph {
+        font-size: 17px;
+        line-height: 1.75;
+        color: var(--muted-light);
+      }
+
+      /* Horizontal Timeline Strip */
+      .about-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: var(--s3);
+        margin-top: var(--s5);
+        padding-top: var(--s4);
+        border-top: 1px solid rgba(168, 150, 132, 0.25);
+        width: 100%;
+        max-width: 880px;
+      }
+
+      @media (min-width: 640px) {
+        .about-timeline {
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: var(--s4);
+        }
+      }
+
+      .timeline-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        flex: 1;
+      }
+
+      .timeline-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--terracotta);
+        margin-bottom: 4px;
+      }
+
+      .timeline-year {
+        font-family: var(--font-display);
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--terracotta);
+        line-height: 1.2;
+      }
+
+      .timeline-role {
+        font-family: var(--font-body);
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--muted-light);
+        line-height: 1.4;
+      }
+
+      .timeline-divider {
+        display: none;
+      }
+
+      @media (min-width: 640px) {
+        .timeline-divider {
+          display: block;
+          width: 1px;
+          align-self: stretch;
+          background-color: rgba(168, 150, 132, 0.25);
+        }
+      }
+
+      /* CORE EXPERTISE SECTION */
+      .section-expertise {
+        background-color: var(--cream-soft);
+        color: var(--ink);
+      }
+
+      .expertise-header {
+        max-width: 700px;
+        margin-bottom: var(--s5);
+      }
+
+      .expertise-header .heading-lg {
+        margin-top: var(--s2);
+        color: var(--ink);
+      }
+
+      .expertise-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--s4);
+        width: 100%;
+      }
+
+      @media (min-width: 1024px) {
+        .expertise-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: var(--s5);
+        }
+      }
+
+      .expertise-card {
+        background-color: var(--cream);
+        border: 1px solid rgba(168, 150, 132, 0.25);
+        border-radius: var(--radius-lg);
+        padding: var(--s4);
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 20px rgba(26, 21, 18, 0.03);
+        transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease), border-color 0.3s var(--ease);
+      }
+
+      @media (min-width: 640px) {
+        .expertise-card {
+          padding: var(--s5);
+        }
+      }
+
+      .expertise-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 32px rgba(26, 21, 18, 0.07);
+        border-color: rgba(196, 98, 45, 0.3);
+      }
+
+      .card-icon-box {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: var(--terracotta);
+        color: var(--cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: var(--s3);
+        flex-shrink: 0;
+      }
+
+      .card-heading {
+        font-family: var(--font-display);
+        font-size: clamp(1.4rem, 2vw + 0.5rem, 1.75rem);
+        font-weight: 600;
+        color: var(--ink);
+        margin-bottom: var(--s1);
+        line-height: 1.25;
+      }
+
+      .card-tagline {
+        font-size: 15px;
+        line-height: 1.6;
+        color: var(--muted-light);
+        margin-bottom: var(--s4);
+      }
+
+      /* Skill bars */
+      .skills-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-bottom: var(--s4);
+      }
+
+      .skill-item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .skill-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .skill-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--ink);
+        line-height: 1.35;
+      }
+
+      .skill-level {
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--terracotta);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        flex-shrink: 0;
+      }
+
+      .skill-track {
+        width: 100%;
+        height: 7px;
+        background-color: var(--cream-soft);
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .skill-fill {
+        height: 100%;
+        width: 0%;
+        background-color: var(--terracotta);
+        border-radius: 4px;
+        transition: width 1.2s var(--ease);
+      }
+
+      /* Tag list */
+      .tag-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: auto;
+        padding-top: var(--s3);
+        border-top: 1px solid rgba(168, 150, 132, 0.18);
+      }
+
+      .pill-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 14px;
+        border-radius: 9999px;
+        font-size: 12.5px;
+        font-weight: 500;
+        background-color: var(--cream-soft);
+        color: var(--ink-soft);
+        border: 1px solid rgba(168, 150, 132, 0.25);
+        white-space: nowrap;
+        transition: border-color 0.25s var(--ease), background-color 0.25s var(--ease);
+      }
+
+      .pill-badge:hover {
+        border-color: var(--terracotta);
+        background-color: var(--cream);
+      }
+
+      /* PROJECTS SECTION */
+      .section-projects {
+        background-color: var(--ink);
+        color: var(--cream);
+        position: relative;
+      }
+
+      .projects-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: var(--s4);
+      }
+
+      .projects-header .heading-lg {
+        margin-top: var(--s2);
+        color: var(--cream);
+      }
+
+      /* Project Category Filter Controls */
+      .projects-filter-bar {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 5px;
+        background-color: rgba(42, 33, 27, 0.7);
+        border: 1px solid rgba(168, 150, 132, 0.25);
+        border-radius: 9999px;
+        margin-bottom: var(--s5);
+      }
+
+      .filter-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 8px 20px;
+        border-radius: 9999px;
+        font-family: var(--font-body);
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid transparent;
+        background-color: transparent;
+        color: var(--cream-soft);
+        white-space: nowrap;
+        transition: background-color 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease), transform 0.2s var(--ease);
+      }
+
+      .filter-btn:hover {
+        color: var(--cream);
+        border-color: rgba(196, 98, 45, 0.5);
+      }
+
+      .filter-btn.is-active {
+        background-color: var(--terracotta);
+        color: var(--cream);
+        border-color: var(--terracotta);
+        box-shadow: 0 4px 14px rgba(196, 98, 45, 0.35);
+      }
+
+      /* Projects Grid */
+      .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--s4);
+        width: 100%;
+      }
+
+      @media (min-width: 640px) {
+        .projects-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .projects-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--s4);
+        }
+      }
+
+      /* Project Card Base */
+      .project-card {
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease), opacity 0.35s var(--ease);
+        will-change: transform, box-shadow;
+      }
+
+      .project-card.is-hidden {
+        display: none;
+      }
+
+      .project-card:hover {
+        transform: translateY(-6px);
+      }
+
+      /* GIS Cards (Text-forward, ink-soft background, subtle border) */
+      .project-card--gis {
+        background-color: var(--ink-soft);
+        border: 1px solid rgba(168, 150, 132, 0.22);
+        padding: var(--s4);
+        justify-content: space-between;
+      }
+
+      .project-card--gis:hover {
+        border-color: rgba(196, 98, 45, 0.55);
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+      }
+
+      .gis-card-header {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: var(--s3);
+      }
+
+      .gis-card-meta {
+        font-size: 12.5px;
+        font-weight: 500;
+        color: var(--terracotta);
+        line-height: 1.4;
+      }
+
+      .gis-card-title {
+        font-family: var(--font-display);
+        font-size: clamp(1.25rem, 1.8vw + 0.5rem, 1.5rem);
+        font-weight: 600;
+        color: var(--cream);
+        line-height: 1.25;
+      }
+
+      .gis-card-desc {
+        font-size: 14.5px;
+        line-height: 1.65;
+        color: var(--muted-dark);
+        margin-bottom: var(--s4);
+      }
+
+      .gis-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: auto;
+        padding-top: var(--s3);
+        border-top: 1px solid rgba(168, 150, 132, 0.16);
+      }
+
+      .gis-tag-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px 12px;
+        border-radius: 9999px;
+        font-size: 12px;
+        font-weight: 500;
+        background-color: rgba(26, 21, 18, 0.65);
+        color: var(--cream-soft);
+        border: 1px solid rgba(168, 150, 132, 0.25);
+        white-space: nowrap;
+      }
+
+      /* Web & Software Cards (Image-forward, refined background) */
+      .project-card--web {
+        background-color: #241D17;
+        border: 1px solid rgba(168, 150, 132, 0.22);
+      }
+
+      .project-card--web:hover {
+        border-color: rgba(196, 98, 45, 0.6);
+        box-shadow: 0 20px 42px rgba(0, 0, 0, 0.55);
+      }
+
+      .web-card-thumb-wrap {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        background-color: var(--ink-soft);
+      }
+
+      .web-card-thumb {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.45s var(--ease);
+      }
+
+      .project-card--web:hover .web-card-thumb {
+        transform: scale(1.04);
+      }
+
+      .web-card-body {
+        padding: var(--s4);
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .web-card-title {
+        font-family: var(--font-display);
+        font-size: clamp(1.2rem, 1.6vw + 0.4rem, 1.45rem);
+        font-weight: 600;
+        color: var(--cream);
+        margin-bottom: var(--s2);
+        line-height: 1.25;
+      }
+
+      .web-card-desc {
+        font-size: 14.5px;
+        line-height: 1.65;
+        color: var(--muted-dark);
+        margin-bottom: var(--s4);
+        flex: 1;
+      }
+
+      .web-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: auto;
+        padding-top: var(--s3);
+        border-top: 1px solid rgba(168, 150, 132, 0.16);
+      }
+
+      .web-tag-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px 12px;
+        border-radius: 9999px;
+        font-size: 12px;
+        font-weight: 500;
+        background-color: rgba(26, 21, 18, 0.7);
+        color: var(--cream-soft);
+        border: 1px solid rgba(168, 150, 132, 0.22);
+        white-space: nowrap;
+      }
+
+      /* DIGITAL ENTREPRENEURSHIP SECTION */
+      .section-entrepreneurship {
+        background-color: var(--cream);
+        color: var(--ink);
+      }
+
+      .entrepreneurship-header {
+        max-width: 760px;
+        margin-bottom: var(--s5);
+      }
+
+      .entrepreneurship-header .heading-lg {
+        margin-top: var(--s2);
+        color: var(--ink);
+      }
+
+      .entrepreneurship-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--s5);
+        align-items: center;
+        width: 100%;
+      }
+
+      @media (min-width: 1024px) {
+        .entrepreneurship-grid {
+          grid-template-columns: 45fr 55fr;
+          gap: var(--s6);
+        }
+      }
+
+      .entrepreneurship-visual {
+        width: 100%;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (min-width: 1024px) {
+        .entrepreneurship-visual {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+
+      .entrepreneurship-img {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 16px 36px rgba(26, 21, 18, 0.08);
+        border: 1px solid rgba(168, 150, 132, 0.24);
+        display: block;
+      }
+
+      .entrepreneurship-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .entrepreneurship-intro {
+        font-size: 17px;
+        line-height: 1.7;
+        color: var(--muted-light);
+        margin-bottom: var(--s4);
+      }
+
+      /* 2x2 Stat Grid */
+      .stat-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--s3);
+        width: 100%;
+        margin-bottom: var(--s4);
+      }
+
+      @media (min-width: 480px) {
+        .stat-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .stat-card {
+        background-color: var(--cream-soft);
+        border: 1px solid rgba(168, 150, 132, 0.25);
+        border-radius: var(--radius-md);
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+      }
+
+      .stat-card:hover {
+        border-color: rgba(196, 98, 45, 0.45);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(26, 21, 18, 0.06);
+      }
+
+      .stat-number {
+        font-family: var(--font-display);
+        font-size: clamp(1.8rem, 2.4vw + 0.5rem, 2.35rem);
+        font-weight: 700;
+        line-height: 1.1;
+        color: var(--ink);
+      }
+
+      .stat-label {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--muted-light);
+        line-height: 1.35;
+      }
+
+      /* Checklist of Leadership Scope */
+      .leadership-checklist {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        padding-top: var(--s3);
+        border-top: 1px solid rgba(168, 150, 132, 0.2);
+        margin: 0;
+        padding-left: 0;
+      }
+
+      .checklist-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink-soft);
+        line-height: 1.5;
+      }
+
+      .check-icon-wrap {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: rgba(196, 98, 45, 0.14);
+        color: var(--terracotta);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      /* PHOTOGRAPHY SECTION */
+      .section-photography {
+        background-color: var(--ink);
+        color: var(--cream);
+      }
+
+      .photography-header {
+        max-width: 700px;
+        margin-bottom: var(--s4);
+      }
+
+      .photography-header .heading-md {
+        margin-top: var(--s1);
+        color: var(--cream);
+      }
+
+      .photography-subtitle {
+        font-size: 15px;
+        color: var(--muted-dark);
+        margin-top: 6px;
+        line-height: 1.5;
+      }
+
+      /* Photo Gallery Grid */
+      .photo-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--s3);
+        width: 100%;
+      }
+
+      @media (min-width: 640px) {
+        .photo-grid {
+          grid-template-columns: repeat(2, 1fr);
+          grid-auto-rows: 230px;
+        }
+
+        .photo-item--tall-1 {
+          grid-row: span 2;
+        }
+
+        .photo-item--tall-2 {
+          grid-row: span 2;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .photo-grid {
+          grid-template-columns: repeat(4, 1fr);
+          grid-auto-rows: 240px;
+          gap: var(--s3);
+        }
+
+        .photo-item--tall-1 {
+          grid-column: 1;
+          grid-row: 1 / span 2;
+        }
+
+        .photo-item--reg-1 {
+          grid-column: 2;
+          grid-row: 1;
+        }
+
+        .photo-item--reg-2 {
+          grid-column: 3;
+          grid-row: 1;
+        }
+
+        .photo-item--reg-3 {
+          grid-column: 2;
+          grid-row: 2;
+        }
+
+        .photo-item--reg-4 {
+          grid-column: 3;
+          grid-row: 2;
+        }
+
+        .photo-item--tall-2 {
+          grid-column: 4;
+          grid-row: 1 / span 2;
+        }
+      }
+
+      .photo-item {
+        position: relative;
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        background-color: var(--ink-soft);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+      }
+
+      @media (max-width: 639px) {
+        .photo-item {
+          aspect-ratio: 4 / 3;
+        }
+
+        .photo-item--tall-1,
+        .photo-item--tall-2 {
+          aspect-ratio: 3 / 4;
+        }
+      }
+
+      .photo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.45s var(--ease);
+      }
+
+      .photo-item:hover .photo-img {
+        transform: scale(1.03);
+      }
+
+      .photo-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(26, 21, 18, 0.42);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.35s var(--ease);
+        pointer-events: none;
+      }
+
+      .photo-item:hover .photo-overlay {
+        opacity: 1;
+      }
+
+      .photo-zoom-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(250, 246, 240, 0.94);
+        color: var(--ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0.85);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+        transition: transform 0.35s var(--ease);
+      }
+
+      .photo-item:hover .photo-zoom-icon {
+        transform: scale(1);
+      }
+
+      /* CREDENTIALS SECTION */
+      .section-credentials {
+        background-color: var(--cream);
+        color: var(--ink);
+      }
+
+      .credentials-header {
+        max-width: 760px;
+        margin-bottom: var(--s5);
+      }
+
+      .credentials-header .heading-lg {
+        margin-top: var(--s2);
+        color: var(--ink);
+      }
+
+      .credentials-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--s5);
+        width: 100%;
+      }
+
+      @media (min-width: 880px) {
+        .credentials-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--s5);
+        }
+      }
+
+      .credential-column {
+        display: flex;
+        flex-direction: column;
+        gap: var(--s4);
+      }
+
+      .credential-column-title {
+        font-family: var(--font-body);
+        font-size: 14.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--terracotta);
+        padding-bottom: 10px;
+        border-bottom: 2px solid rgba(196, 98, 45, 0.28);
+        margin-bottom: 2px;
+      }
+
+      .credential-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--s4);
+      }
+
+      .credential-entry {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      .credential-entry-title {
+        font-family: var(--font-display);
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1.3;
+      }
+
+      .credential-entry-sub {
+        font-family: var(--font-body);
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--muted-light);
+        line-height: 1.4;
+      }
+
+      .credential-entry-detail {
+        font-family: var(--font-body);
+        font-size: 13px;
+        color: #786C60;
+        line-height: 1.4;
+      }
+
+      /* References Column Cards */
+      .reference-cards {
+        display: flex;
+        flex-direction: column;
+        gap: var(--s3);
+      }
+
+      .reference-card {
+        background-color: var(--cream-soft);
+        border: 1px solid rgba(168, 150, 132, 0.28);
+        border-radius: var(--radius-md);
+        padding: 18px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
+      }
+
+      .reference-card:hover {
+        border-color: rgba(196, 98, 45, 0.45);
+        box-shadow: 0 8px 24px rgba(26, 21, 18, 0.06);
+        transform: translateY(-2px);
+      }
+
+      .reference-name {
+        font-family: var(--font-display);
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--ink);
+        line-height: 1.3;
+      }
+
+      .reference-role {
+        font-family: var(--font-body);
+        font-size: 13px;
+        color: var(--muted-light);
+        line-height: 1.4;
+      }
+
+      .reference-link {
+        font-family: var(--font-body);
+        font-size: 13px;
+        color: var(--terracotta);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s var(--ease);
+        display: inline-block;
+        word-break: break-all;
+      }
+
+      .reference-link:hover {
+        text-decoration: underline;
+        color: #A34E20;
+      }
+
+      .reference-note {
+        font-family: var(--font-body);
+        font-size: 13px;
+        color: #8A7B70;
+        font-style: italic;
+        line-height: 1.4;
+      }
+
+      /* Language Line */
+      .credentials-languages {
+        margin-top: var(--s5);
+        padding-top: var(--s4);
+        border-top: 1px solid rgba(168, 150, 132, 0.24);
+        font-size: 13.5px;
+        color: #786C60;
+        font-weight: 500;
+        line-height: 1.5;
+      }
+
+      /* CTA SECTION */
+      .section-cta {
+        background-color: var(--terracotta);
+        color: var(--cream);
+        padding-top: var(--s7);
+        padding-bottom: var(--s7);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-inner {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-eyebrow {
+        font-family: var(--font-body);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: rgba(250, 246, 240, 0.9);
+        margin-bottom: var(--s2);
+        display: inline-block;
+      }
+
+      .cta-heading {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 3.2vw + 0.8rem, 2.75rem);
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--cream);
+        margin-bottom: var(--s3);
+        text-align: center;
+      }
+
+      .cta-desc {
+        font-size: 16.5px;
+        line-height: 1.65;
+        color: rgba(250, 246, 240, 0.9);
+        max-width: 560px;
+        margin: 0 auto var(--s5) auto;
+        text-align: center;
+      }
+
+      .cta-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: var(--s3);
+        margin-bottom: var(--s5);
+      }
+
+      /* Cream-filled button (inverse of .btn-primary, ink text) */
+      .btn-cream {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 13px 28px;
+        border-radius: 9999px;
+        font-family: var(--font-body);
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: var(--cream);
+        color: var(--ink);
+        border: 1px solid var(--cream);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+        transition: background-color 0.3s var(--ease), transform 0.2s var(--ease), box-shadow 0.3s var(--ease), color 0.3s var(--ease);
+      }
+
+      .btn-cream:hover {
+        background-color: #FFFFFF;
+        color: var(--ink);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+      }
+
+      /* Outline adapted for terracotta background */
+      .btn-outline-cream {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 13px 28px;
+        border-radius: 9999px;
+        font-family: var(--font-body);
+        font-size: 15px;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: transparent;
+        color: var(--cream);
+        border: 1.5px solid var(--cream);
+        transition: background-color 0.3s var(--ease), transform 0.2s var(--ease), border-color 0.3s var(--ease);
+      }
+
+      .btn-outline-cream:hover {
+        background-color: rgba(250, 246, 240, 0.14);
+        transform: translateY(-2px);
+      }
+
+      /* Contact details row */
+      .cta-contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px 22px;
+        font-size: 13.5px;
+        color: rgba(250, 246, 240, 0.82);
+        font-weight: 400;
+        line-height: 1.4;
+      }
+
+      .cta-contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.2s var(--ease);
+      }
+
+      .cta-contact-item a {
+        color: inherit;
+        text-decoration: none;
+        transition: color 0.2s var(--ease);
+      }
+
+      .cta-contact-item a:hover {
+        color: #FFFFFF;
+        text-decoration: underline;
+      }
+
+      .cta-contact-sep {
+        opacity: 0.45;
+        user-select: none;
+      }
+
+      @media (max-width: 639px) {
+        .cta-contact-sep {
+          display: none;
+        }
+
+        .cta-contact-row {
+          flex-direction: column;
+          gap: 8px;
+        }
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        width: 0%;
+        background-color: var(--terracotta);
+        z-index: 1200;
+        pointer-events: none;
+        transition: width 0.05s linear;
+      }
+
+      /* Back to Top Button */
+      .back-to-top {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--ink-soft);
+        border: 1.5px solid var(--terracotta);
+        color: var(--cream);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 95;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(12px);
+        transition: opacity 0.3s var(--ease), transform 0.3s var(--ease), visibility 0.3s var(--ease), background-color 0.2s var(--ease), border-color 0.2s var(--ease);
+      }
+
+      .back-to-top.is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .back-to-top:hover {
+        background-color: var(--terracotta);
+        color: var(--cream);
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(196, 98, 45, 0.4);
+      }
+
+      /* Active Nav Link Highlighting */
+      .nav-link.is-active {
+        color: var(--terracotta);
+      }
+
+      .nav-link.is-active::before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: var(--terracotta);
+        pointer-events: none;
+      }
+
+      .mobile-nav-link.is-active {
+        color: var(--terracotta);
+        font-weight: 600;
+      }
+
+      /* FOOTER */
+      .footer {
+        background-color: var(--ink);
+        color: var(--cream);
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding-top: var(--s5);
+        padding-bottom: var(--s4);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--s4);
+        margin-bottom: var(--s5);
+      }
+
+      @media (min-width: 640px) {
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: var(--s5);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .footer-grid {
+          grid-template-columns: 1.4fr 1fr 1.3fr 1fr;
+          gap: var(--s5);
+        }
+      }
+
+      @media (max-width: 639px) {
+        .footer-grid {
+          text-align: center;
+          justify-items: center;
+        }
+
+        .footer-identity {
+          align-items: center;
+        }
+
+        .footer-nav-list {
+          align-items: center;
+        }
+
+        .footer-contact-list {
+          align-items: center;
+        }
+
+        .footer-social-row {
+          justify-content: center;
+        }
+      }
+
+      .footer-column {
+        display: flex;
+        flex-direction: column;
+        gap: var(--s2);
+      }
+
+      .footer-col-title {
+        font-family: var(--font-body);
+        font-size: 13.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--cream);
+        margin-bottom: 4px;
+      }
+
+      /* Column 1: Identity */
+      .footer-identity {
+        display: flex;
+        flex-direction: column;
+        gap: var(--s2);
+      }
+
+      .footer-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .footer-monogram {
+        width: 38px;
+        height: 38px;
+        border: 1.5px solid var(--terracotta);
+        border-radius: var(--radius-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 15px;
+        color: var(--cream);
+        flex-shrink: 0;
+      }
+
+      .footer-brand-name {
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 16px;
+        color: var(--cream);
+        line-height: 1.2;
+      }
+
+      .footer-tagline {
+        font-size: 14px;
+        line-height: 1.55;
+        color: var(--muted-dark);
+        max-width: 240px;
+        margin: 0;
+      }
+
+      /* Column 2: Navigate */
+      .footer-nav-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .footer-nav-link {
+        font-size: 14px;
+        color: var(--muted-dark);
+        text-decoration: none;
+        transition: color 0.2s var(--ease);
+      }
+
+      .footer-nav-link:hover {
+        color: var(--terracotta);
+      }
+
+      /* Column 3: Contact */
+      .footer-contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .footer-contact-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        color: var(--muted-dark);
+        line-height: 1.4;
+      }
+
+      .footer-contact-item a {
+        color: var(--muted-dark);
+        text-decoration: none;
+        transition: color 0.2s var(--ease);
+      }
+
+      .footer-contact-item a:hover {
+        color: var(--terracotta);
+      }
+
+      .footer-contact-icon {
+        color: var(--terracotta);
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Column 4: Connect */
+      .footer-social-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .footer-social-link {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: var(--ink-soft);
+        border: 1px solid rgba(168, 150, 132, 0.3);
+        color: var(--cream);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: background-color 0.25s var(--ease), border-color 0.25s var(--ease), transform 0.2s var(--ease), color 0.25s var(--ease);
+      }
+
+      .footer-social-link:hover {
+        background-color: var(--terracotta);
+        border-color: var(--terracotta);
+        color: var(--cream);
+        transform: translateY(-2px);
+      }
+
+      /* Bottom bar */
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding-top: var(--s3);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      @media (max-width: 639px) {
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+        }
+      }
+
+      .footer-copy {
+        font-size: 12px;
+        color: var(--muted-dark);
+        margin: 0;
+      }
+
+      .footer-colophon {
+        font-size: 12px;
+        color: var(--muted-dark);
+        font-style: italic;
+        margin: 0;
+      }
+
+      /* Reduced Motion Preference */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+
+        .hero-blob {
+          animation: none !important;
+        }
+
+        .pulse-dot::after {
+          animation: none !important;
+        }
+
+        .reveal {
+          opacity: 1 !important;
+          transform: none !important;
+          transition: none !important;
+        }
+
+        .skill-fill {
+          transition: none !important;
+        }
+
+        .btn-primary:hover,
+        .btn-ghost:hover,
+        .btn-outline-light:hover,
+        .social-link:hover,
+        .expertise-card:hover,
+        .project-card:hover,
+        .project-card--web:hover .web-card-thumb,
+        .stat-card:hover,
+        .photo-item:hover .photo-img,
+        .photo-item:hover .photo-zoom-icon,
+        .reference-card:hover,
+        .btn-cream:hover,
+        .btn-outline-cream:hover,
+        .back-to-top:hover,
+        .footer-social-link:hover {
+          transform: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar-inner">
+        <!-- Left: Monogram and Title -->
+        <a href="#home" class="nav-brand" aria-label="Guruh Wicaksono homepage">
+          <div class="nav-monogram">GW</div>
+          <div class="nav-brand-text">
+            <span class="nav-brand-name">Guruh Wicaksono</span>
+            <span class="nav-brand-role">GIS &amp; SOFTWARE DEVELOPMENT</span>
+          </div>
+        </a>
+
+        <!-- Center: Desktop Nav Links -->
+        <nav aria-label="Main Navigation">
+          <ul class="nav-menu-desktop">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#expertise" class="nav-link">Expertise</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#entrepreneurship" class="nav-link">Entrepreneurship</a></li>
+            <li><a href="#photography" class="nav-link">Photography</a></li>
+            <li><a href="#credentials" class="nav-link">Credentials</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right: Actions -->
+        <div class="nav-actions">
+          <a href="assets/cv.pdf" download class="btn-primary nav-cv-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            <span>Download CV</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="nav-toggle" id="navToggle" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+            <span class="nav-toggle-bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer & Backdrop -->
+    <div class="mobile-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+    <div class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation" aria-hidden="true">
+      <div>
+        <div class="mobile-drawer-header">
+          <div class="nav-brand">
+            <div class="nav-monogram">GW</div>
+            <div class="nav-brand-text">
+              <span class="nav-brand-name">Guruh Wicaksono</span>
+              <span class="nav-brand-role">GIS &amp; DEV</span>
+            </div>
+          </div>
+          <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close mobile menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mobile-nav-links">
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#expertise" class="mobile-nav-link">Expertise</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#entrepreneurship" class="mobile-nav-link">Entrepreneurship</a></li>
+          <li><a href="#photography" class="mobile-nav-link">Photography</a></li>
+          <li><a href="#credentials" class="mobile-nav-link">Credentials</a></li>
+        </ul>
+      </div>
+
+      <div class="mobile-drawer-footer">
+        <a href="assets/cv.pdf" download class="btn-primary" style="width: 100%;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <!-- Left Column -->
+          <div class="hero-content">
+            <span class="eyebrow reveal" data-delay="100">GIS SPECIALIST &amp; SOFTWARE DEVELOPER</span>
+
+            <div class="hero-title-group">
+              <h1 class="hero-title-main reveal" data-delay="200">Guruh Wicaksono</h1>
+              <span class="hero-title-sub reveal" data-delay="280">GIS Mapping | Software &amp; Web Development</span>
+            </div>
+
+            <p class="hero-description reveal" data-delay="360">
+              I spent four years mapping floodplains and coastal zones for international projects funded by the Asian Development Bank. That same discipline for precision now shapes how I build software, and how I run a visual services business of my own.
+            </p>
+
+            <div class="hero-cta-group reveal" data-delay="440">
+              <a href="assets/cv.pdf" download class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span>Download CV</span>
+              </a>
+              <a href="#projects" class="btn-outline-light">View Projects</a>
+            </div>
+
+            <div class="hero-status reveal" data-delay="520">
+              <span class="pulse-dot"></span>
+              <span>OPEN TO OPPORTUNITIES</span>
+            </div>
+
+            <div class="hero-socials reveal" data-delay="600">
+              <!-- GitHub -->
+              <a
+                href="https://github.com/guruhw23"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="GitHub Profile"
+                title="GitHub"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+
+              <!-- Email -->
+              <a
+                href="mailto:guruhwicaksono.gis@gmail.com"
+                class="social-link"
+                aria-label="Email Guruh Wicaksono"
+                title="Email"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </a>
+
+              <!-- LinkedIn: Replace href="#" with your verified LinkedIn profile URL -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="LinkedIn Profile"
+                title="LinkedIn"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <!-- WhatsApp -->
+              <a
+                href="https://wa.me/6285640066619"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="WhatsApp"
+                title="WhatsApp"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="hero-visual reveal" data-delay="300">
+            <!-- Decorative Dot Grid -->
+            <svg class="hero-dot-grid" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+              <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="3" cy="3" r="2" fill="var(--muted-dark)" />
+              </pattern>
+              <rect width="100" height="100" fill="url(#dot-pattern)" />
+            </svg>
+
+            <!-- Organic Terracotta Morphing Blob -->
+            <div class="hero-blob" aria-hidden="true"></div>
+
+            <!-- Profile Photo Placeholder -->
+            <!-- REPLACE STEP: Replace assets/profile.jpg with your real headshot photo -->
+            <div class="hero-photo-wrapper">
+              <img
+                src="assets/profile.jpg"
+                alt="Guruh Wicaksono, GIS specialist and software developer"
+                class="hero-photo"
+                loading="eager"
+                fetchpriority="high"
+                width="390"
+                height="488"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&h=900&q=80';"
+              />
+            </div>
+
+            <!-- Floating Experience Card -->
+            <div class="hero-experience-card">
+              <div class="card-star-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <div class="card-number">15+</div>
+                <div class="card-title">Years of Experience</div>
+                <div class="card-subtitle">Spatial Data, Software, Visual Business</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="section section--light" id="about">
+        <div class="container about-container">
+          <div class="about-header reveal" data-delay="100">
+            <span class="eyebrow">ABOUT</span>
+            <h2 class="heading-lg">From Spatial Data to Software and Visual Business</h2>
+          </div>
+
+          <div class="about-text-group">
+            <p class="about-paragraph reveal" data-delay="180">
+              I have run Mizumoto Photography since 2021, a visual services business covering weddings, pre-wedding sessions, and event documentation in Central Java. Leading it day to day has meant handling everything from client relationships to brand partnerships with local institutions.
+            </p>
+            <p class="about-paragraph reveal" data-delay="260">
+              Before that, I spent four years as a GIS and Remote Sensing Specialist. I worked on international watershed management and marine spatial planning projects, including a flood management study for the Citarum Hulu river basin funded by the Asian Development Bank, in collaboration with Deltares, PUSAIR, and ITB. That work is where precision and evidence-based analysis became second nature.
+            </p>
+            <p class="about-paragraph reveal" data-delay="340">
+              Now I am applying that same discipline to a new direction: building web applications and using AI tools to make business operations more efficient. It is not a career change so much as adding a new set of tools to the same way of working.
+            </p>
+          </div>
+
+          <!-- Horizontal Timeline Strip -->
+          <div class="about-timeline reveal" data-delay="420">
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-year">2009 to 2013</div>
+              <div class="timeline-role">GIS &amp; Remote Sensing Specialist</div>
+            </div>
+
+            <div class="timeline-divider" aria-hidden="true"></div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-year">2021 to Present</div>
+              <div class="timeline-role">Founder &amp; CEO, Mizumoto Photography</div>
+            </div>
+
+            <div class="timeline-divider" aria-hidden="true"></div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-year">2024 to Present</div>
+              <div class="timeline-role">Web &amp; AI-Assisted Development</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CORE EXPERTISE SECTION -->
+      <section class="section section-expertise" id="expertise">
+        <div class="container">
+          <div class="expertise-header reveal" data-delay="100">
+            <span class="eyebrow">CORE EXPERTISE</span>
+            <h2 class="heading-lg">Two Disciplines, One Standard of Precision</h2>
+          </div>
+
+          <div class="expertise-grid">
+            <!-- COLUMN 1: GIS & Remote Sensing -->
+            <div class="expertise-card reveal" data-delay="200">
+              <div class="card-icon-box" aria-hidden="true">
+                <!-- Map / Layers Icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                  <line x1="9" y1="3" x2="9" y2="18"></line>
+                  <line x1="15" y1="6" x2="15" y2="21"></line>
+                </svg>
+              </div>
+
+              <h3 class="card-heading">GIS &amp; Remote Sensing</h3>
+              <p class="card-tagline">
+                International spatial data projects for watershed management and marine spatial planning.
+              </p>
+
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">GIS &amp; Spatial Analysis (ArcGIS, QGIS, Global Mapper)</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-level="92"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Remote Sensing &amp; Watershed Mapping</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-level="90"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Marine Spatial Planning</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-level="88"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Cross-institutional Collaboration (ADB, Deltares, PUSAIR)</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-level="90"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tag-group" aria-label="Key projects">
+                <span class="pill-badge">DAS Citarum Hulu (ADB)</span>
+                <span class="pill-badge">Coastal Zoning, West Sumatra</span>
+                <span class="pill-badge">PT Royal HaskoningDHV MLD</span>
+                <span class="pill-badge">PT Waindo Specterra</span>
+              </div>
+            </div>
+
+            <!-- COLUMN 2: Software & Web Development -->
+            <div class="expertise-card reveal" data-delay="300">
+              <div class="card-icon-box" aria-hidden="true">
+                <!-- Code Brackets Icon -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+
+              <h3 class="card-heading">Software &amp; Web Development</h3>
+              <p class="card-tagline">
+                Modern frontend development and AI-assisted workflows for real client and personal projects.
+              </p>
+
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Frontend Development (React, Vite, Tailwind CSS)</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-level="78"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">AI-Assisted Development (Google AI Studio, Gemini, Claude)</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-level="82"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Deployment &amp; Cloud (Vercel, Netlify, Cloudflare)</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-level="75"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span class="skill-name">Version Control (GitHub)</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-track">
+                    <div class="skill-fill" data-level="80"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tag-group" aria-label="Key projects">
+                <span class="pill-badge">IBIP Website</span>
+                <span class="pill-badge">UNO Batik</span>
+                <span class="pill-badge">aura PHOTO Studio</span>
+                <span class="pill-badge">AI Image Generation App</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="section section--dark section-projects" id="projects">
+        <div class="container">
+          <div class="projects-header reveal" data-delay="100">
+            <span class="eyebrow">SELECTED WORK</span>
+            <h2 class="heading-lg">Projects That Prove the Discipline</h2>
+          </div>
+
+          <!-- Category Filter Toggle -->
+          <div class="projects-filter-bar reveal" data-delay="180" role="tablist" aria-label="Project categories">
+            <button
+              type="button"
+              class="filter-btn is-active"
+              data-filter="web"
+              role="tab"
+              aria-selected="true"
+              id="filter-btn-web"
+            >
+              Web &amp; Software
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-filter="gis"
+              role="tab"
+              aria-selected="false"
+              id="filter-btn-gis"
+            >
+              GIS &amp; Spatial
+            </button>
+          </div>
+
+          <!-- Projects Grid Container -->
+          <div class="projects-grid" id="projectsGrid">
+            <!-- GIS & SPATIAL CARDS (data-category="gis") -->
+            <article class="project-card project-card--gis reveal is-hidden" data-category="gis" data-delay="220">
+              <div>
+                <div class="gis-card-header">
+                  <span class="gis-card-meta">GIS Specialist, PT Royal HaskoningDHV MLD, 2012 to 2013</span>
+                  <h3 class="gis-card-title">DAS Citarum Hulu Flood Management</h3>
+                </div>
+                <p class="gis-card-desc">
+                  Comprehensive spatial data analysis and thematic mapping for an international flood management project funded by the Asian Development Bank, in consortium with Deltares and PUSAIR.
+                </p>
+              </div>
+              <div class="gis-tags">
+                <span class="gis-tag-pill">ArcGIS</span>
+                <span class="gis-tag-pill">Remote Sensing</span>
+                <span class="gis-tag-pill">Hydrology Mapping</span>
+              </div>
+            </article>
+
+            <article class="project-card project-card--gis reveal is-hidden" data-category="gis" data-delay="300">
+              <div>
+                <div class="gis-card-header">
+                  <span class="gis-card-meta">GIS &amp; Remote Sensing Coordinator, PT Waindo Spectra, 2011</span>
+                  <h3 class="gis-card-title">West Sumatra Coastal Zoning</h3>
+                </div>
+                <p class="gis-card-desc">
+                  Led technical zoning and marine spatial planning analysis for coastal regions of West Sumatra, ensuring ecological and regulatory compliance.
+                </p>
+              </div>
+              <div class="gis-tags">
+                <span class="gis-tag-pill">Marine Spatial Planning</span>
+                <span class="gis-tag-pill">QGIS</span>
+                <span class="gis-tag-pill">Coastal Zoning</span>
+              </div>
+            </article>
+
+            <article class="project-card project-card--gis reveal is-hidden" data-category="gis" data-delay="380">
+              <div>
+                <div class="gis-card-header">
+                  <span class="gis-card-meta">GIS &amp; Remote Sensing Coordinator, PT Waindo Spectra, 2010 to 2011</span>
+                  <h3 class="gis-card-title">DAS Flood and River Basin Mapping</h3>
+                </div>
+                <p class="gis-card-desc">
+                  Coordinated spatial data analysis and remote sensing work supporting flood and river basin management for an Asian Development Bank client project.
+                </p>
+              </div>
+              <div class="gis-tags">
+                <span class="gis-tag-pill">Remote Sensing</span>
+                <span class="gis-tag-pill">River Basin Analysis</span>
+              </div>
+            </article>
+
+            <!-- WEB & SOFTWARE CARDS (data-category="web") -->
+            <!-- Note: Replace assets/project-1.jpg through assets/project-5.jpg with verified screenshot captures -->
+            <article class="project-card project-card--web reveal" data-category="web" data-delay="220">
+              <div class="web-card-thumb-wrap">
+                <img
+                  src="assets/project-1.jpg"
+                  alt="PT IBIP Corporate Website"
+                  class="web-card-thumb"
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fit=crop&w=800&h=500&q=80';"
+                />
+              </div>
+              <div class="web-card-body">
+                <h3 class="web-card-title">PT IBIP Corporate Website</h3>
+                <p class="web-card-desc">
+                  Corporate profile website for an industrial estate company, covering company information, leadership, news, and dynamic content sections.
+                </p>
+                <div class="web-tags">
+                  <span class="web-tag-pill">React</span>
+                  <span class="web-tag-pill">Vite</span>
+                  <span class="web-tag-pill">React Router</span>
+                  <span class="web-tag-pill">Tailwind CSS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--web reveal" data-category="web" data-delay="300">
+              <div class="web-card-thumb-wrap">
+                <img
+                  src="assets/project-2.jpg"
+                  alt="Mizumoto Creative Studio Website"
+                  class="web-card-thumb"
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1452587925148-ce544e77e70d?fit=crop&w=800&h=500&q=80';"
+                />
+              </div>
+              <div class="web-card-body">
+                <h3 class="web-card-title">Mizumoto Creative Studio Website</h3>
+                <p class="web-card-desc">
+                  Interactive profile and portfolio site showcasing professional photography and creative design services.
+                </p>
+                <div class="web-tags">
+                  <span class="web-tag-pill">React</span>
+                  <span class="web-tag-pill">Vite</span>
+                  <span class="web-tag-pill">Tailwind CSS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--web reveal" data-category="web" data-delay="380">
+              <div class="web-card-thumb-wrap">
+                <img
+                  src="assets/project-3.jpg"
+                  alt="UNO Batik Website"
+                  class="web-card-thumb"
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?fit=crop&w=800&h=500&q=80';"
+                />
+              </div>
+              <div class="web-card-body">
+                <h3 class="web-card-title">UNO Batik Website</h3>
+                <p class="web-card-desc">
+                  Responsive business profile and digital catalog for a batik product brand, covering identity, catalog, and customer service information.
+                </p>
+                <div class="web-tags">
+                  <span class="web-tag-pill">React</span>
+                  <span class="web-tag-pill">Vite</span>
+                  <span class="web-tag-pill">Tailwind CSS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--web reveal" data-category="web" data-delay="460">
+              <div class="web-card-thumb-wrap">
+                <img
+                  src="assets/project-4.jpg"
+                  alt="aura PHOTO Studio Website"
+                  class="web-card-thumb"
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516035069371-29a1b244cc32?fit=crop&w=800&h=500&q=80';"
+                />
+              </div>
+              <div class="web-card-body">
+                <h3 class="web-card-title">aura PHOTO Studio Website</h3>
+                <p class="web-card-desc">
+                  Modern photography studio site with an interactive portfolio, service packages, location details, and direct email contact integration.
+                </p>
+                <div class="web-tags">
+                  <span class="web-tag-pill">React</span>
+                  <span class="web-tag-pill">Vite</span>
+                  <span class="web-tag-pill">TypeScript</span>
+                  <span class="web-tag-pill">Tailwind CSS</span>
+                  <span class="web-tag-pill">EmailJS</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--web reveal" data-category="web" data-delay="540">
+              <div class="web-card-thumb-wrap">
+                <img
+                  src="assets/project-5.jpg"
+                  alt="AI Image Generation App"
+                  class="web-card-thumb"
+                  loading="lazy"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?fit=crop&w=800&h=500&q=80';"
+                />
+              </div>
+              <div class="web-card-body">
+                <h3 class="web-card-title">AI Image Generation App</h3>
+                <p class="web-card-desc">
+                  Experimental AI-powered web application for creative image generation and editing workflows using a modern generative API.
+                </p>
+                <div class="web-tags">
+                  <span class="web-tag-pill">React</span>
+                  <span class="web-tag-pill">Vite</span>
+                  <span class="web-tag-pill">TypeScript</span>
+                  <span class="web-tag-pill">Tailwind CSS</span>
+                  <span class="web-tag-pill">Google Gemini API</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIGITAL ENTREPRENEURSHIP SECTION -->
+      <section class="section section--light section-entrepreneurship" id="entrepreneurship">
+        <div class="container">
+          <div class="entrepreneurship-header reveal" data-delay="100">
+            <span class="eyebrow">DIGITAL ENTREPRENEURSHIP</span>
+            <h2 class="heading-lg">Building and Running a Visual Services Business</h2>
+          </div>
+
+          <div class="entrepreneurship-grid">
+            <!-- Left Column: Studio Photo Placeholder -->
+            <!-- REPLACE STEP: Replace assets/mizumoto-hero.jpg with a real studio or behind-the-scenes photograph, not a client wedding shot -->
+            <div class="entrepreneurship-visual reveal" data-delay="180">
+              <img
+                src="assets/mizumoto-hero.jpg"
+                alt="Mizumoto Photography studio work"
+                class="entrepreneurship-img"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542038784456-1ea8e935640e?fit=crop&w=900&h=1125&q=80';"
+              />
+            </div>
+
+            <!-- Right Column: Leadership Case Study & Stats -->
+            <div class="entrepreneurship-content">
+              <p class="entrepreneurship-intro reveal" data-delay="240">
+                Since 2021, I have led Mizumoto Photography as founder and CEO, growing it from a solo operation into a small studio serving weddings, events, and institutional clients across Central Java.
+              </p>
+
+              <!-- 2x2 Stat Grid -->
+              <div class="stat-grid">
+                <div class="stat-card reveal" data-delay="280">
+                  <div class="stat-number">70+</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+
+                <div class="stat-card reveal" data-delay="340">
+                  <div class="stat-number">45+</div>
+                  <div class="stat-label">Happy Clients</div>
+                </div>
+
+                <div class="stat-card reveal" data-delay="400">
+                  <div class="stat-number">5+</div>
+                  <div class="stat-label">Years Running the Business</div>
+                </div>
+
+                <div class="stat-card reveal" data-delay="460">
+                  <div class="stat-number">Multiple</div>
+                  <div class="stat-label">Institutional Partnerships</div>
+                </div>
+              </div>
+
+              <!-- Scope of Business Leadership Checklist -->
+              <ul class="leadership-checklist">
+                <li class="checklist-item reveal" data-delay="500">
+                  <div class="check-icon-wrap" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span>Setting business strategy and daily operations</span>
+                </li>
+
+                <li class="checklist-item reveal" data-delay="540">
+                  <div class="check-icon-wrap" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span>Building long-term partnerships with schools and local creators</span>
+                </li>
+
+                <li class="checklist-item reveal" data-delay="580">
+                  <div class="check-icon-wrap" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span>Managing brand reputation and client relationships</span>
+                </li>
+
+                <li class="checklist-item reveal" data-delay="620">
+                  <div class="check-icon-wrap" aria-hidden="true">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <span>Producing consistent, high-quality visual output at scale</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PHOTOGRAPHY SECTION -->
+      <section class="section section--dark section-photography" id="photography">
+        <div class="container">
+          <div class="photography-header reveal" data-delay="100">
+            <span class="eyebrow">PHOTOGRAPHY</span>
+            <h2 class="heading-md">A Visual Portfolio</h2>
+            <p class="photography-subtitle">Selected frames from weddings, portraits, and studio work.</p>
+          </div>
+
+          <!-- Gallery Grid (2 tall, 4 regular tiles) -->
+          <!-- Note: Replace assets/photo-1.jpg through assets/photo-6.jpg with verified high-resolution photographs -->
+          <div class="photo-grid">
+            <!-- Tile 1 (Tall) -->
+            <div class="photo-item photo-item--tall-1 reveal" data-delay="180">
+              <img
+                src="assets/photo-1.jpg"
+                alt="Wedding photography by Guruh Wicaksono"
+                class="photo-img"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519741497674-611481863552?fit=crop&w=800&h=1200&q=80';"
+              />
+              <div class="photo-overlay" aria-hidden="true">
+                <div class="photo-zoom-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tile 2 (Regular) -->
+            <div class="photo-item photo-item--reg-1 reveal" data-delay="240">
+              <img
+                src="assets/photo-2.jpg"
+                alt="Portrait photography by Guruh Wicaksono"
+                class="photo-img"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606800052052-a08af7148866?fit=crop&w=800&h=600&q=80';"
+              />
+              <div class="photo-overlay" aria-hidden="true">
+                <div class="photo-zoom-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tile 3 (Regular) -->
+            <div class="photo-item photo-item--reg-2 reveal" data-delay="300">
+              <img
+                src="assets/photo-3.jpg"
+                alt="Studio detail photography by Guruh Wicaksono"
+                class="photo-img"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?fit=crop&w=800&h=600&q=80';"
+              />
+              <div class="photo-overlay" aria-hidden="true">
+                <div class="photo-zoom-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tile 4 (Regular) -->
+            <div class="photo-item photo-item--reg-3 reveal" data-delay="360">
+              <img
+                src="assets/photo-4.jpg"
+                alt="Wedding celebration moments by Guruh Wicaksono"
+                class="photo-img"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?fit=crop&w=800&h=600&q=80';"
+              />
+              <div class="photo-overlay" aria-hidden="true">
+                <div class="photo-zoom-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tile 5 (Regular) -->
+            <div class="photo-item photo-item--reg-4 reveal" data-delay="420">
+              <img
+                src="assets/photo-6.jpg"
+                alt="Event documentation photography by Guruh Wicaksono"
+                class="photo-img"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?fit=crop&w=800&h=600&q=80';"
+              />
+              <div class="photo-overlay" aria-hidden="true">
+                <div class="photo-zoom-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tile 6 (Tall) -->
+            <div class="photo-item photo-item--tall-2 reveal" data-delay="480">
+              <img
+                src="assets/photo-5.jpg"
+                alt="Bridal portrait photography by Guruh Wicaksono"
+                class="photo-img"
+                loading="lazy"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537633552985-df8429e8048b?fit=crop&w=800&h=1200&q=80';"
+              />
+              <div class="photo-overlay" aria-hidden="true">
+                <div class="photo-zoom-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CREDENTIALS SECTION -->
+      <section class="section section--light section-credentials" id="credentials">
+        <div class="container">
+          <div class="credentials-header reveal" data-delay="100">
+            <span class="eyebrow">CREDENTIALS</span>
+            <h2 class="heading-lg">Education, Certifications, and References</h2>
+          </div>
+
+          <div class="credentials-grid">
+            <!-- Column 1: Education -->
+            <div class="credential-column reveal" data-delay="180">
+              <h3 class="credential-column-title">Education</h3>
+              <div class="credential-list">
+                <div class="credential-entry">
+                  <h4 class="credential-entry-title">Bachelor of Marine Science (S.Kel.)</h4>
+                  <p class="credential-entry-sub">Diponegoro University, Semarang</p>
+                  <p class="credential-entry-detail">2009, GPA 3.31/4.00, Academic Scholarship Recipient</p>
+                </div>
+
+                <div class="credential-entry">
+                  <h4 class="credential-entry-title">Senior High School</h4>
+                  <p class="credential-entry-sub">SMA Negeri 3 Pekalongan</p>
+                  <p class="credential-entry-detail">Graduated 2003</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 2: Certifications -->
+            <div class="credential-column reveal" data-delay="260">
+              <h3 class="credential-column-title">Certifications</h3>
+              <div class="credential-list">
+                <div class="credential-entry">
+                  <h4 class="credential-entry-title">POSSI-CMAS A1 Diving Certification</h4>
+                  <p class="credential-entry-sub">Indonesian Underwater Sports Association (POSSI), Reg. No. 2051299.A1</p>
+                  <p class="credential-entry-detail">2009</p>
+                </div>
+
+                <div class="credential-entry">
+                  <h4 class="credential-entry-title">Coral Reef Monitoring Training</h4>
+                  <p class="credential-entry-sub">Internal Project Training</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Column 3: Professional References -->
+            <div class="credential-column reveal" data-delay="340">
+              <h3 class="credential-column-title">Professional References</h3>
+              <div class="reference-cards">
+                <div class="reference-card">
+                  <h4 class="reference-name">Dr. Muhammad Helmi, S.Si., M.Si.</h4>
+                  <p class="reference-role">Lecturer in Oceanography, Diponegoro University</p>
+                  <a href="mailto:mhelmi@lecturer.undip.ac.id" class="reference-link">mhelmi@lecturer.undip.ac.id</a>
+                </div>
+
+                <div class="reference-card">
+                  <h4 class="reference-name">Jan-Jaap (JJ) Brinkman</h4>
+                  <p class="reference-role">Senior Water Management Expert, Deltares (Retired)</p>
+                  <p class="reference-note">Contact available on request</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Understated Language Line -->
+          <div class="credentials-languages reveal" data-delay="400">
+            <span>Languages: Indonesian (Native), English (Intermediate, TOEFL PBT 468)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SECTION -->
+      <section class="section-cta" id="contact">
+        <div class="container">
+          <div class="cta-inner">
+            <span class="cta-eyebrow reveal" data-delay="100">LET'S CONNECT</span>
+            <h2 class="cta-heading reveal" data-delay="160">
+              Open to GIS, Remote Sensing, and Software Development Opportunities
+            </h2>
+            <p class="cta-desc reveal" data-delay="220">
+              Based in Central Java, open to remote roles, relocation, and project-based collaboration. Reach out directly or download the full CV below.
+            </p>
+
+            <div class="cta-actions reveal" data-delay="280">
+              <a href="assets/cv.pdf" download class="btn-cream">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download CV</span>
+              </a>
+              <a href="mailto:guruhwicaksono.gis@gmail.com" class="btn-outline-cream">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email Me</span>
+              </a>
+            </div>
+
+            <div class="cta-contact-row reveal" data-delay="340">
+              <div class="cta-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <a href="tel:+6285640066619">+62 856 4006 6619</a>
+              </div>
+              <span class="cta-contact-sep" aria-hidden="true">&bull;</span>
+              <div class="cta-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a href="mailto:guruhwicaksono.gis@gmail.com">guruhwicaksono.gis@gmail.com</a>
+              </div>
+              <span class="cta-contact-sep" aria-hidden="true">&bull;</span>
+              <div class="cta-contact-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Pekalongan, Central Java, Indonesia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer section--dark" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Column 1: Identity -->
+          <div class="footer-column footer-identity">
+            <a href="#home" class="footer-brand" aria-label="Guruh Wicaksono homepage">
+              <div class="footer-monogram">GW</div>
+              <span class="footer-brand-name">Guruh Wicaksono</span>
+            </a>
+            <p class="footer-tagline">
+              GIS Mapping and Software Development, based in Pekalongan, Indonesia.
+            </p>
+          </div>
+
+          <!-- Column 2: Navigate -->
+          <div class="footer-column">
+            <h3 class="footer-col-title">Navigate</h3>
+            <ul class="footer-nav-list">
+              <li><a href="#about" class="footer-nav-link">About</a></li>
+              <li><a href="#expertise" class="footer-nav-link">Expertise</a></li>
+              <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+              <li><a href="#entrepreneurship" class="footer-nav-link">Entrepreneurship</a></li>
+              <li><a href="#photography" class="footer-nav-link">Photography</a></li>
+              <li><a href="#credentials" class="footer-nav-link">Credentials</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact -->
+          <div class="footer-column">
+            <h3 class="footer-col-title">Contact</h3>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </span>
+                <a href="mailto:guruhwicaksono.gis@gmail.com">guruhwicaksono.gis@gmail.com</a>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </span>
+                <a href="tel:+6285640066619">+62 856 4006 6619</a>
+              </li>
+              <li class="footer-contact-item">
+                <span class="footer-contact-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </span>
+                <span>Pekalongan, Central Java, Indonesia</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Connect -->
+          <div class="footer-column">
+            <h3 class="footer-col-title">Connect</h3>
+            <div class="footer-social-row">
+              <!-- GitHub Link -->
+              <a href="https://github.com/guruhw23" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub Profile">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+
+              <!-- LinkedIn Link (placeholder href="#" with comment to replace) -->
+              <a href="#" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn Profile">
+                <!-- Replace href with your actual LinkedIn profile URL -->
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <!-- Email Link -->
+              <a href="mailto:guruhwicaksono.gis@gmail.com" class="footer-social-link" aria-label="Send Email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <p class="footer-copy">&copy; 2026 Guruh Wicaksono. All rights reserved.</p>
+          <p class="footer-colophon">Designed with intent. Built with AI assistance.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Project category filter toggle
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const selectedCategory = btn.getAttribute('data-filter');
+
+            // Update button states
+            filterBtns.forEach((b) => {
+              const isActive = b === btn;
+              b.classList.toggle('is-active', isActive);
+              b.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            // Filter project cards
+            projectCards.forEach((card) => {
+              const cardCat = card.getAttribute('data-category');
+              if (selectedCategory === 'all' || cardCat === selectedCategory) {
+                card.classList.remove('is-hidden');
+                // Retrigger reveal if needed
+                card.classList.add('is-visible');
+              } else {
+                card.classList.add('is-hidden');
+              }
+            });
+          });
+        });
+        // Scroll-reveal with IntersectionObserver
+        const reveals = document.querySelectorAll('.reveal');
+
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver(
+            (entries, obs) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  const target = entry.target;
+                  const delay = target.getAttribute('data-delay');
+                  if (delay) {
+                    target.style.transitionDelay = `${delay}ms`;
+                  }
+                  target.classList.add('is-visible');
+                  obs.unobserve(target);
+                }
+              });
+            },
+            {
+              root: null,
+              rootMargin: '0px 0px -40px 0px',
+              threshold: 0.15,
+            }
+          );
+
+          reveals.forEach((el) => observer.observe(el));
+        } else {
+          reveals.forEach((el) => el.classList.add('is-visible'));
+        }
+
+        // Skill bar animated fill on scroll into view
+        const skillFills = document.querySelectorAll('.skill-fill');
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if ('IntersectionObserver' in window) {
+          const skillObserver = new IntersectionObserver(
+            (entries, obs) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  const fill = entry.target;
+                  const level = fill.getAttribute('data-level');
+                  if (level) {
+                    if (prefersReducedMotion) {
+                      fill.style.width = `${level}%`;
+                    } else {
+                      setTimeout(() => {
+                        fill.style.width = `${level}%`;
+                      }, 150);
+                    }
+                  }
+                  obs.unobserve(fill);
+                }
+              });
+            },
+            {
+              threshold: 0.2,
+              rootMargin: '0px 0px -20px 0px',
+            }
+          );
+
+          skillFills.forEach((fill) => skillObserver.observe(fill));
+        } else {
+          skillFills.forEach((fill) => {
+            const level = fill.getAttribute('data-level');
+            if (level) fill.style.width = `${level}%`;
+          });
+        }
+
+        // Navbar scroll class (.is-scrolled)
+        const navbar = document.getElementById('navbar');
+        const handleScroll = () => {
+          if (window.scrollY > 40) {
+            navbar.classList.add('is-scrolled');
+          } else {
+            navbar.classList.remove('is-scrolled');
+          }
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
+
+        // Mobile drawer navigation
+        const navToggle = document.getElementById('navToggle');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const mobileBackdrop = document.getElementById('mobileBackdrop');
+        const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        const getDrawerFocusableElements = () => {
+          if (!mobileDrawer) return [];
+          return Array.from(
+            mobileDrawer.querySelectorAll(
+              'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            )
+          ).filter((el) => !el.hasAttribute('disabled') && el.offsetParent !== null);
+        };
+
+        const openMenu = () => {
+          mobileDrawer.classList.add('is-open');
+          mobileBackdrop.classList.add('is-active');
+          document.body.classList.add('menu-open');
+          navToggle.setAttribute('aria-expanded', 'true');
+          mobileDrawer.setAttribute('aria-hidden', 'false');
+
+          // Focus the close button or first focusable element inside drawer
+          setTimeout(() => {
+            if (mobileCloseBtn) {
+              mobileCloseBtn.focus();
+            } else {
+              const focusables = getDrawerFocusableElements();
+              if (focusables.length > 0) focusables[0].focus();
+            }
+          }, 60);
+        };
+
+        const closeMenu = () => {
+          mobileDrawer.classList.remove('is-open');
+          mobileBackdrop.classList.remove('is-active');
+          document.body.classList.remove('menu-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+          mobileDrawer.setAttribute('aria-hidden', 'true');
+          if (navToggle) navToggle.focus();
+        };
+
+        if (navToggle) navToggle.addEventListener('click', openMenu);
+        if (mobileCloseBtn) mobileCloseBtn.addEventListener('click', closeMenu);
+        if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeMenu);
+
+        mobileLinks.forEach((link) => {
+          link.addEventListener('click', closeMenu);
+        });
+
+        // Focus trap & Escape key listener
+        document.addEventListener('keydown', (e) => {
+          if (!mobileDrawer.classList.contains('is-open')) return;
+
+          if (e.key === 'Escape') {
+            e.preventDefault();
+            closeMenu();
+            return;
+          }
+
+          if (e.key === 'Tab') {
+            const focusables = getDrawerFocusableElements();
+            if (focusables.length === 0) return;
+
+            const firstElement = focusables[0];
+            const lastElement = focusables[focusables.length - 1];
+
+            if (e.shiftKey) {
+              if (document.activeElement === firstElement || !mobileDrawer.contains(document.activeElement)) {
+                e.preventDefault();
+                lastElement.focus();
+              }
+            } else {
+              if (document.activeElement === lastElement || !mobileDrawer.contains(document.activeElement)) {
+                e.preventDefault();
+                firstElement.focus();
+              }
+            }
+          }
+        });
+
+        // 1. Scroll progress bar (rAF-throttled)
+        const scrollProgressBar = document.getElementById('scrollProgressBar');
+        let progressRafId = null;
+
+        const updateScrollProgress = () => {
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+          const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const scrollPercent = docHeight > 0 ? Math.min(100, Math.max(0, (scrollTop / docHeight) * 100)) : 0;
+          if (scrollProgressBar) {
+            scrollProgressBar.style.width = `${scrollPercent}%`;
+          }
+          progressRafId = null;
+        };
+
+        window.addEventListener(
+          'scroll',
+          () => {
+            if (!progressRafId) {
+              progressRafId = requestAnimationFrame(updateScrollProgress);
+            }
+          },
+          { passive: true }
+        );
+        updateScrollProgress();
+
+        // 2. Back to top button (appears after scrolling past hero)
+        const backToTopBtn = document.getElementById('backToTop');
+        const heroSection = document.getElementById('home');
+
+        const updateBackToTop = () => {
+          if (!backToTopBtn) return;
+          const heroThreshold = heroSection ? heroSection.offsetTop + heroSection.offsetHeight * 0.7 : 400;
+          if (window.scrollY > heroThreshold) {
+            backToTopBtn.classList.add('is-visible');
+          } else {
+            backToTopBtn.classList.remove('is-visible');
+          }
+        };
+
+        window.addEventListener('scroll', updateBackToTop, { passive: true });
+        updateBackToTop();
+
+        if (backToTopBtn) {
+          backToTopBtn.addEventListener('click', () => {
+            const isReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (isReducedMotion) {
+              window.scrollTo({ top: 0, behavior: 'auto' });
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          });
+        }
+
+        // 3. Active nav link highlighting (IntersectionObserver on each section)
+        const desktopNavLinks = document.querySelectorAll('.nav-link');
+        const mobileNavLinksList = document.querySelectorAll('.mobile-nav-link');
+        const sectionsWithId = document.querySelectorAll('section[id]');
+
+        if ('IntersectionObserver' in window && sectionsWithId.length > 0) {
+          const sectionVisibility = new Map();
+
+          const navObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  sectionVisibility.set(entry.target.id, entry.intersectionRatio);
+                } else {
+                  sectionVisibility.delete(entry.target.id);
+                }
+              });
+
+              // Find section with the highest intersection ratio
+              let currentActiveId = null;
+              let highestRatio = -1;
+              sectionVisibility.forEach((ratio, id) => {
+                if (ratio > highestRatio) {
+                  highestRatio = ratio;
+                  currentActiveId = id;
+                }
+              });
+
+              if (currentActiveId) {
+                desktopNavLinks.forEach((link) => {
+                  const href = link.getAttribute('href');
+                  if (href === `#${currentActiveId}`) {
+                    link.classList.add('is-active');
+                  } else {
+                    link.classList.remove('is-active');
+                  }
+                });
+
+                mobileNavLinksList.forEach((link) => {
+                  const href = link.getAttribute('href');
+                  if (href === `#${currentActiveId}`) {
+                    link.classList.add('is-active');
+                  } else {
+                    link.classList.remove('is-active');
+                  }
+                });
+              }
+            },
+            {
+              root: null,
+              rootMargin: '-20% 0px -40% 0px',
+              threshold: [0.1, 0.25, 0.5, 0.75, 1.0],
+            }
+          );
+
+          sectionsWithId.forEach((sec) => navObserver.observe(sec));
+        }
+      });
+    </script>
+  </body>
+</html>
